@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>Converter</title>
+<body>
+
+<h2>Converter</h2>
+<p>Enter values: </p>
+
+<p>
+  <label>Length</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)"
+  <label>Width</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)"
+  <label>Height</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)"onchange="LengthConverter(this.value)">
+</p>
+<p>cm: <span id="outputcm"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.39370;
+}
+</script>
+</body>
+</html>
