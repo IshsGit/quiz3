@@ -9,17 +9,29 @@
 <p>
   <label>Length</label>
   <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)"
+  oninput="LengthConverter(this.value)"onchange="LengthConverter(this.value)">
   <label>Width</label>
-  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)"
+  <input id="inputInches" type="number" placeholder="Inches" oninput="WidthConverter(this.value)"
+  oninput="WidthConverter(this.value)"onchange="WidthConverter(this.value)">
   <label>Height</label>
-  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)"onchange="LengthConverter(this.value)">
+  <input id="inputInches" type="number" placeholder="Inches" oninput="HeightConverter(this.value)"onchange="HeightConverter(this.value)">
 </p>
-<p>cm: <span id="outputcm"></span></p>
+<p>Length: <span id="outputlength"></span><br>
+Width: <span id="outputwidth"></span><br>
+Height: <span id="outputheight"></span><br>
+</p>
 
 <script>
 function LengthConverter(valNum) {
-  document.getElementById("outputcm").innerHTML=valNum/0.39370;
+  document.getElementById("outputlength").innerHTML=valNum/0.39370;
 }
+function WidthConverter(valNum) {
+  document.getElementById("outputwidth").innerHTML=valNum/0.39370;
+  }
+function HeightConverter(valNum) {
+  document.getElementById("outputheight").innerHTML=valNum/0.39370;
+  }
+
 </script>
 </body>
 </html>
