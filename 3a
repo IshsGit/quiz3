@@ -4,7 +4,7 @@
 <body>
 
 <h2>Converter</h2>
-<p>Enter values: </p>
+<p>Enter values imperial: </p>
 
 <p>
   <label>Length</label>
