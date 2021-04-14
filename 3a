@@ -20,7 +20,22 @@
 Width: <span id="outputwidth"></span><br>
 Height: <span id="outputheight"></span><br>
 </p>
-
+<h2>Converter</h2>
+<p>Enter values Metric: </p>
+<p>
+  <label>Length</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)"
+  oninput="LengthConverter2(this.value)"onchange="LengthConverter2(this.value)">
+  <label>Width</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="WidthConverter2(this.value)"
+  oninput="WidthConverter2(this.value)"onchange="WidthConverter2(this.value)">
+  <label>Height</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="HeightConverter2(this.value)"onchange="HeightConverter2(this.value)">
+</p>
+<p>Length: <span id="outputlength2"></span><br>
+Width: <span id="outputwidth2"></span><br>
+Height: <span id="outputheight2"></span><br>
+</p>
 <script>
 function LengthConverter(valNum) {
   document.getElementById("outputlength").innerHTML=valNum/0.39370;
@@ -31,7 +46,15 @@ function WidthConverter(valNum) {
 function HeightConverter(valNum) {
   document.getElementById("outputheight").innerHTML=valNum/0.39370;
   }
-
+  function LengthConverter2(valNum) {
+  document.getElementById("outputlength2").innerHTML=valNum*0.39370;
+}
+  function WidthConverter2(valNum) {
+  document.getElementById("outputwidth2").innerHTML=valNum*0.39370;
+}
+  function HeightConverter2(valNum) {
+  document.getElementById("outputheight2").innerHTML=valNum*0.39370;
+}
 </script>
 </body>
 </html>
